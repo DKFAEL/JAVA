@@ -7,7 +7,7 @@ public class ConversorDe$ {
         Scanner entrada = new Scanner (System.in);
         double cotacao, dolar, real;
 
-        System.out.println("Conversor  de dolar pra real ");
+        System.out.println("Conversor  de dolar para real ");
         System.out.println("Digite a cotação do dólar: ");
         cotacao = entrada.nextDouble();
         System.out.println("Dgite o valor do dólar: ");
