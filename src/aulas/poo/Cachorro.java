@@ -11,19 +11,23 @@ public class Cachorro extends Pet {
             this.raca = raca;
         }
 
-    @Override
+    @Override //usado pra substituir a classe pai
+            //Sobrescreve a ação fazerSom
+
     public void fazerSom() { //vamos sobreescrever a ação de fazer som
         System.out.println("au au");
     }
 
-    @Override
+    @Override //usado pra substituir a classe pai
+
     public void brincar() { // o cachrro late na hora de brincar
         this.fazerSom(); // chama o fazerSom do cachorro, foi sobrescrito
         super.brincar(); // esta chamando o brincar() de Pet
         this.dormir(); // chama o dormir do Pet, pois nao foi sobrescrito
     }
 
-    @Override
+    @Override //usado pra substituir a classe pai
+
     public void comer(String comida) {
             //verifica se é a comida favorita
         if (comida.equals(this.comidaFavorita)){
