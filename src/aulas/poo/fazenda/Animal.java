@@ -61,5 +61,19 @@ class  Galinha implements Animal {
         gato.fazerSom();
         gato.dormir();
         gato.comer("Peixe");
+
+        //Interface não consigo criar um objeto
+        //Animal novoAnimal = new Animal();// não consigo criar pois é interface
+
+        Animal animalGalinha = new Galinha();
+        Animal animalGatinho = new Gato();
+              //OUUU
+        //Animal animalGalinha = galinha;
+        //Animal animalGatinho = gato;
+
+
+        System.out.println("====POLIMORFISMO");
+        animalGalinha.fazerSom();
+        animalGatinho.fazerSom();
     }
 }
